@@ -1,0 +1,347 @@
+2015-12-25T13:04:06.747221000 0.500309s notice: Recursively removing directory /Users/dpham/Developer/projects/react-transform-boilerplate/rethinkdb_data/tmp
+2015-12-25T13:04:06.748662000 0.501754s notice: Initializing directory /Users/dpham/Developer/projects/react-transform-boilerplate/rethinkdb_data
+2015-12-25T13:04:06.748742000 0.501829s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/dpham/Developer/projects/react-transform-boilerplate/rethinkdb_data' did not already exist or is empty.)
+2015-12-25T13:04:06.748762000 0.501849s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2015-12-25T13:04:06.752889000 0.505976s notice: Running on Darwin 15.2.0 x86_64
+2015-12-25T13:04:06.752928000 0.506015s notice: Loading data from directory /Users/dpham/Developer/projects/react-transform-boilerplate/rethinkdb_data
+2015-12-25T13:04:06.866851000 0.619938s info: Automatically using cache size of 929 MB
+2015-12-25T13:04:06.867666000 0.620753s notice: Listening for intracluster connections on port 29015
+2015-12-25T13:04:06.869093000 0.622180s notice: Listening for client driver connections on port 28015
+2015-12-25T13:04:06.869188000 0.622275s notice: Listening for administrative HTTP connections on port 8080
+2015-12-25T13:04:06.869191000 0.622278s notice: Listening on addresses: 127.0.0.1, ::1
+2015-12-25T13:04:06.869192000 0.622279s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-12-25T13:04:06.869194000 0.622281s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2015-12-25T13:04:07.416706000 1.169793s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2015-12-25T13:04:19.278580000 13.031667s info: Table 9b6fd1e0-f338-4649-a061-4e2ea1cbd5f4: Added replica on this server.
+2015-12-25T13:04:20.558885000 14.311973s info: Table 9b6fd1e0-f338-4649-a061-4e2ea1cbd5f4: Starting a new Raft election for term 1.
+2015-12-25T13:04:20.579145000 14.332232s info: Table 9b6fd1e0-f338-4649-a061-4e2ea1cbd5f4: This server is Raft leader for term 1. Latest log index is 0.
+2015-12-25T13:04:21.411919000 15.165007s info: Table 9b6fd1e0-f338-4649-a061-4e2ea1cbd5f4: Configuration is changing.
+2015-12-25T19:20:56.195252000 11074.997841s notice: Removing file /Users/dpham/Developer/projects/react-transform-boilerplate/rethinkdb_data/9b6fd1e0-f338-4649-a061-4e2ea1cbd5f4
+2015-12-25T19:20:56.195259000 11074.997848s info: Table 9b6fd1e0-f338-4649-a061-4e2ea1cbd5f4: Deleted the table.
+2015-12-25T19:20:56.453189000 11075.255779s info: Table eba63d51-7f15-4fa2-b8c9-362c97d51a2e: Added replica on this server.
+2015-12-25T19:20:57.892531000 11076.695120s info: Table eba63d51-7f15-4fa2-b8c9-362c97d51a2e: Starting a new Raft election for term 1.
+2015-12-25T19:20:57.916451000 11076.719040s info: Table eba63d51-7f15-4fa2-b8c9-362c97d51a2e: This server is Raft leader for term 1. Latest log index is 0.
+2015-12-25T19:20:58.592192000 11077.394782s info: Table eba63d51-7f15-4fa2-b8c9-362c97d51a2e: Configuration is changing.
+2015-12-25T19:22:10.430735000 11149.233324s notice: Removing file /Users/dpham/Developer/projects/react-transform-boilerplate/rethinkdb_data/eba63d51-7f15-4fa2-b8c9-362c97d51a2e
+2015-12-25T19:22:10.430747000 11149.233336s info: Table eba63d51-7f15-4fa2-b8c9-362c97d51a2e: Deleted the table.
+2015-12-25T19:22:10.677202000 11149.479791s info: Table a0ae1ca4-d021-4088-80d0-9368c6c584fa: Added replica on this server.
+2015-12-25T19:22:12.040911000 11150.843500s info: Table a0ae1ca4-d021-4088-80d0-9368c6c584fa: Starting a new Raft election for term 1.
+2015-12-25T19:22:12.063538000 11150.866128s info: Table a0ae1ca4-d021-4088-80d0-9368c6c584fa: This server is Raft leader for term 1. Latest log index is 0.
+2015-12-25T19:22:12.819214000 11151.621803s info: Table a0ae1ca4-d021-4088-80d0-9368c6c584fa: Configuration is changing.
+2015-12-25T19:22:35.098684000 11173.901274s notice: Removing file /Users/dpham/Developer/projects/react-transform-boilerplate/rethinkdb_data/a0ae1ca4-d021-4088-80d0-9368c6c584fa
+2015-12-25T19:22:35.098693000 11173.901282s info: Table a0ae1ca4-d021-4088-80d0-9368c6c584fa: Deleted the table.
+2015-12-25T19:22:35.357903000 11174.160492s info: Table 3b046ec3-3335-4228-92f7-6ab20f5cb281: Added replica on this server.
+2015-12-25T19:22:36.801895000 11175.604485s info: Table 3b046ec3-3335-4228-92f7-6ab20f5cb281: Starting a new Raft election for term 1.
+2015-12-25T19:22:36.828786000 11175.631375s info: Table 3b046ec3-3335-4228-92f7-6ab20f5cb281: This server is Raft leader for term 1. Latest log index is 0.
+2015-12-25T19:22:37.488556000 11176.291146s info: Table 3b046ec3-3335-4228-92f7-6ab20f5cb281: Configuration is changing.
+2015-12-25T19:58:10.570792000 13309.373381s notice: Removing file /Users/dpham/Developer/projects/react-transform-boilerplate/rethinkdb_data/3b046ec3-3335-4228-92f7-6ab20f5cb281
+2015-12-25T19:58:10.570801000 13309.373390s info: Table 3b046ec3-3335-4228-92f7-6ab20f5cb281: Deleted the table.
+2015-12-25T19:58:10.822860000 13309.625449s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Added replica on this server.
+2015-12-25T19:58:11.980630000 13310.783220s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 1.
+2015-12-25T19:58:12.003505000 13310.806095s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 1. Latest log index is 0.
+2015-12-25T19:58:12.960960000 13311.763550s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Configuration is changing.
+2015-12-25T23:31:25.630168000 0.302598s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2015-12-25T23:31:25.634303000 0.306727s notice: Running on Darwin 15.2.0 x86_64
+2015-12-25T23:31:25.634333000 0.306757s notice: Loading data from directory /Users/dpham/Developer/projects/react-transform-boilerplate/rethinkdb_data
+2015-12-25T23:31:25.672850000 0.345274s info: Automatically using cache size of 3253 MB
+2015-12-25T23:31:25.674003000 0.346427s notice: Listening for intracluster connections on port 29015
+2015-12-25T23:31:25.687541000 0.359965s notice: Listening for client driver connections on port 28015
+2015-12-25T23:31:25.687743000 0.360167s notice: Listening for administrative HTTP connections on port 8080
+2015-12-25T23:31:25.687745000 0.360169s notice: Listening on addresses: 127.0.0.1, ::1
+2015-12-25T23:31:25.687746000 0.360169s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-12-25T23:31:25.687746001 0.360170s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2015-12-25T23:31:26.115906000 0.788330s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2015-12-25T23:31:26.929712000 1.602136s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 2.
+2015-12-25T23:31:26.950819000 1.623243s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 2. Latest log index is 4.
+2016-01-07T17:05:08.976835000 0.320522s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-07T17:05:08.980659000 0.324343s notice: Running on Darwin 15.2.0 x86_64
+2016-01-07T17:05:08.980701000 0.324383s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-07T17:05:09.015057000 0.358740s info: Automatically using cache size of 1564 MB
+2016-01-07T17:05:09.016584000 0.360267s notice: Listening for intracluster connections on port 29015
+2016-01-07T17:05:09.031648000 0.375331s notice: Listening for client driver connections on port 28015
+2016-01-07T17:05:09.031841000 0.375523s notice: Listening for administrative HTTP connections on port 8080
+2016-01-07T17:05:09.031843000 0.375525s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-07T17:05:09.031844000 0.375526s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-07T17:05:09.031849000 0.375532s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-07T17:05:10.674486000 2.018189s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 3.
+2016-01-07T17:05:10.696848000 2.040551s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 3. Latest log index is 7.
+2016-01-07T17:05:13.895999000 5.239742s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-07T17:08:53.493983000 224.840152s notice: Someone asked for the nonwhitelisted file "/ProductExplorer/".  If this should be accessible, add it to the static web assets.
+2016-01-11T19:47:45.976481000 0.332975s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-11T19:47:45.980607000 0.337099s notice: Running on Darwin 15.2.0 x86_64
+2016-01-11T19:47:45.980638000 0.337129s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-11T19:47:46.021134000 0.377626s info: Automatically using cache size of 968 MB
+2016-01-11T19:47:46.022229000 0.378721s notice: Listening for intracluster connections on port 29015
+2016-01-11T19:47:46.038300000 0.394801s notice: Listening for client driver connections on port 28015
+2016-01-11T19:47:46.038605000 0.395107s notice: Listening for administrative HTTP connections on port 8080
+2016-01-11T19:47:46.038608000 0.395109s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-11T19:47:46.038609000 0.395111s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-11T19:47:46.038619000 0.395120s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-11T19:47:47.540658000 1.897169s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-11T19:47:47.685174000 2.041685s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 4.
+2016-01-11T19:47:47.707131000 2.063643s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 4. Latest log index is 10.
+2016-01-11T20:27:40.234377000 0.313041s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-11T20:27:40.238004000 0.316664s notice: Running on Darwin 15.2.0 x86_64
+2016-01-11T20:27:40.238036000 0.316695s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-11T20:27:40.271334000 0.349993s info: Automatically using cache size of 1003 MB
+2016-01-11T20:27:40.272114000 0.350773s notice: Listening for intracluster connections on port 29015
+2016-01-11T20:27:40.287567000 0.366227s notice: Listening for client driver connections on port 28015
+2016-01-11T20:27:40.287785000 0.366444s notice: Listening for administrative HTTP connections on port 8080
+2016-01-11T20:27:40.287786000 0.366446s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-11T20:27:40.287787000 0.366446s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-11T20:27:40.287788000 0.366447s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-11T20:27:41.617621000 1.696293s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-11T20:27:41.647939000 1.726611s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 5.
+2016-01-11T20:27:41.673541000 1.752213s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 5. Latest log index is 13.
+2016-01-12T16:48:54.688180000 0.362548s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-12T16:48:54.691845000 0.366209s notice: Running on Darwin 15.3.0 x86_64
+2016-01-12T16:48:54.691881000 0.366244s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-12T16:48:54.734782000 0.409146s info: Automatically using cache size of 1693 MB
+2016-01-12T16:48:54.735911000 0.410274s notice: Listening for intracluster connections on port 29015
+2016-01-12T16:48:54.750050000 0.424414s notice: Listening for client driver connections on port 28015
+2016-01-12T16:48:54.750274000 0.424637s notice: Listening for administrative HTTP connections on port 8080
+2016-01-12T16:48:54.750275000 0.424639s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-12T16:48:54.750276000 0.424639s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-12T16:48:54.750276001 0.424640s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-12T16:48:55.209970000 0.884334s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-12T16:48:56.618120000 2.292493s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 6.
+2016-01-12T16:48:56.641879000 2.316252s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 6. Latest log index is 16.
+2016-01-13T12:48:23.270440000 0.015912s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-13T12:48:23.273985000 0.019455s notice: Running on Darwin 15.3.0 x86_64
+2016-01-13T12:48:23.274032000 0.019501s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-13T12:48:23.307909000 0.053378s info: Automatically using cache size of 1409 MB
+2016-01-13T12:48:23.309038000 0.054507s notice: Listening for intracluster connections on port 29015
+2016-01-13T12:48:23.325264000 0.070733s notice: Listening for client driver connections on port 28015
+2016-01-13T12:48:23.325480000 0.070949s notice: Listening for administrative HTTP connections on port 8080
+2016-01-13T12:48:23.325482000 0.070950s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-13T12:48:23.325482001 0.070951s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-13T12:48:23.325483000 0.070951s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-13T12:48:23.959454000 0.704970s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-13T12:48:24.773403000 1.518919s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 7.
+2016-01-13T12:48:24.798191000 1.543707s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 7. Latest log index is 19.
+2016-01-13T12:52:34.898634000 0.284900s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-13T12:52:34.904264000 0.290528s notice: Running on Darwin 15.3.0 x86_64
+2016-01-13T12:52:34.904330000 0.290593s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-13T12:52:34.931515000 0.317778s info: Automatically using cache size of 1309 MB
+2016-01-13T12:52:34.932277000 0.318540s notice: Listening for intracluster connections on port 29015
+2016-01-13T12:52:34.947143000 0.333406s notice: Listening for client driver connections on port 28015
+2016-01-13T12:52:34.947353000 0.333616s notice: Listening for administrative HTTP connections on port 8080
+2016-01-13T12:52:34.947355000 0.333618s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-13T12:52:34.947356000 0.333619s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-13T12:52:34.947357000 0.333619s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-13T12:52:35.400737000 0.787000s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-13T12:52:36.146519000 1.532829s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 8.
+2016-01-13T12:52:36.170869000 1.557179s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 8. Latest log index is 22.
+2016-01-13T15:18:55.939250000 5990.386580s notice: Someone asked for the nonwhitelisted file "/ProductExplorer/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:19:55.849827000 6050.298896s notice: Someone asked for the nonwhitelisted file "/QuoteCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:19:59.241427000 6053.690591s notice: Someone asked for the nonwhitelisted file "/QuoteCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:20:05.029445000 6059.478796s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:20:21.699729000 6076.149551s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:20:22.305856000 6076.755724s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:20:22.564777000 6077.014645s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:20:22.755367000 6077.205236s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:20:22.935259000 6077.385127s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:25:02.980984000 6357.438984s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:25:03.672627000 6358.130673s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:25:03.919842000 6358.377888s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:25:04.111498000 6358.569544s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:09.432573000 6483.894238s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:09.981223000 6484.442888s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:10.173191000 6484.634904s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:10.363241000 6484.824953s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:10.532349000 6484.994061s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:10.701396000 6485.163108s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:10.870468000 6485.332180s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:50.156137000 6524.618978s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:52.843755000 6527.306690s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:53.461104000 6527.924038s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:53.933219000 6528.396201s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-13T15:27:54.225491000 6528.688473s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-14T00:09:28.343555000 0.016753s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-14T00:09:28.347126000 0.020322s notice: Running on Darwin 15.3.0 x86_64
+2016-01-14T00:09:28.347160000 0.020355s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-14T00:09:28.381231000 0.054426s info: Automatically using cache size of 4708 MB
+2016-01-14T00:09:28.382339000 0.055535s notice: Listening for intracluster connections on port 29015
+2016-01-14T00:09:28.397848000 0.071043s notice: Listening for client driver connections on port 28015
+2016-01-14T00:09:28.398052000 0.071248s notice: Listening for administrative HTTP connections on port 8080
+2016-01-14T00:09:28.398054000 0.071249s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-14T00:09:28.398054001 0.071250s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-14T00:09:28.398055000 0.071250s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-14T00:09:28.907024000 0.580220s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-14T00:09:29.909820000 1.583062s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 9.
+2016-01-14T00:09:29.941245000 1.614487s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 9. Latest log index is 25.
+2016-01-14T00:10:05.717891000 37.392149s notice: Someone asked for the nonwhitelisted file "/ProductExplorer/".  If this should be accessible, add it to the static web assets.
+2016-01-14T00:19:52.148591000 0.004202s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-14T00:19:52.152251000 0.007859s notice: Running on Darwin 15.3.0 x86_64
+2016-01-14T00:19:52.152306000 0.007914s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-14T00:19:52.185740000 0.041348s info: Automatically using cache size of 3964 MB
+2016-01-14T00:19:52.186469000 0.042077s notice: Listening for intracluster connections on port 29015
+2016-01-14T00:19:52.199995000 0.055603s notice: Listening for client driver connections on port 28015
+2016-01-14T00:19:52.200166000 0.055773s notice: Listening for administrative HTTP connections on port 8080
+2016-01-14T00:19:52.200167000 0.055775s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-14T00:19:52.200168000 0.055775s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-14T00:19:52.200168001 0.055776s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-14T00:19:52.582121000 0.437774s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-14T00:19:53.262975000 1.118629s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 10.
+2016-01-14T00:19:53.286683000 1.142336s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 10. Latest log index is 28.
+2016-01-14T00:26:04.365747000 0.284520s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-14T00:26:04.370045000 0.288812s notice: Running on Darwin 15.3.0 x86_64
+2016-01-14T00:26:04.370078000 0.288844s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-14T00:26:04.410281000 0.329048s info: Automatically using cache size of 3217 MB
+2016-01-14T00:26:04.411121000 0.329888s notice: Listening for intracluster connections on port 29015
+2016-01-14T00:26:04.423888000 0.342655s notice: Listening for client driver connections on port 28015
+2016-01-14T00:26:04.424096000 0.342862s notice: Listening for administrative HTTP connections on port 8080
+2016-01-14T00:26:04.424097000 0.342864s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-14T00:26:04.424098000 0.342864s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-14T00:26:04.424099000 0.342865s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-14T00:26:04.809378000 0.728145s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-14T00:26:05.638700000 1.557467s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 11.
+2016-01-14T00:26:05.664328000 1.583095s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 11. Latest log index is 31.
+2016-01-14T22:53:30.993305000 0.298125s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-14T22:53:30.997707000 0.302522s notice: Running on Darwin 15.3.0 x86_64
+2016-01-14T22:53:30.997741000 0.302555s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-14T22:53:31.033786000 0.338600s info: Automatically using cache size of 2880 MB
+2016-01-14T22:53:31.034777000 0.339590s notice: Listening for intracluster connections on port 29015
+2016-01-14T22:53:31.050219000 0.355033s notice: Listening for client driver connections on port 28015
+2016-01-14T22:53:31.050393000 0.355207s notice: Listening for administrative HTTP connections on port 8080
+2016-01-14T22:53:31.050394000 0.355208s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-14T22:53:31.050395000 0.355209s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-14T22:53:31.050395001 0.355209s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-14T22:53:31.583672000 0.888486s notice: A newer version of the RethinkDB server is available: 2.2.3-1. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-14T22:53:32.488988000 1.793801s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 12.
+2016-01-14T22:53:32.515280000 1.820094s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 12. Latest log index is 34.
+2016-01-16T01:38:30.945422000 0.015703s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-16T01:38:30.948521000 0.018800s notice: Running on Darwin 15.3.0 x86_64
+2016-01-16T01:38:30.948546000 0.018824s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-16T01:38:30.987892000 0.058170s info: Automatically using cache size of 3700 MB
+2016-01-16T01:38:30.989026000 0.059304s notice: Listening for intracluster connections on port 29015
+2016-01-16T01:38:31.005164000 0.075442s notice: Listening for client driver connections on port 28015
+2016-01-16T01:38:31.005385000 0.075662s notice: Listening for administrative HTTP connections on port 8080
+2016-01-16T01:38:31.005386000 0.075664s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-16T01:38:31.005387000 0.075664s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-16T01:38:31.005387001 0.075665s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-16T01:38:31.424448000 0.494727s notice: A newer version of the RethinkDB server is available: 2.2.3-1. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-16T01:38:32.961321000 2.031649s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Starting a new Raft election for term 13.
+2016-01-16T01:38:32.983368000 2.053696s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: This server is Raft leader for term 13. Latest log index is 37.
+2016-01-17T22:43:52.317245000 35510.058504s notice: Removing file /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data/1f01cc25-0fbe-4eb9-8051-501f7208bf17
+2016-01-17T22:43:52.317253000 35510.058510s info: Table 1f01cc25-0fbe-4eb9-8051-501f7208bf17: Deleted the table.
+2016-01-17T22:44:22.638229000 35540.380253s info: Table 177eaa89-2899-4cc0-82de-7e9e414a9153: Added replica on this server.
+2016-01-17T22:44:23.989170000 35541.731242s info: Table 177eaa89-2899-4cc0-82de-7e9e414a9153: Starting a new Raft election for term 1.
+2016-01-17T22:44:24.015187000 35541.757259s info: Table 177eaa89-2899-4cc0-82de-7e9e414a9153: This server is Raft leader for term 1. Latest log index is 0.
+2016-01-17T22:56:52.767733000 36290.529021s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-17T23:06:13.327855000 36851.103513s notice: Removing file /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data/177eaa89-2899-4cc0-82de-7e9e414a9153
+2016-01-17T23:06:13.327865000 36851.103523s info: Table 177eaa89-2899-4cc0-82de-7e9e414a9153: Deleted the table.
+2016-01-17T23:06:13.593380000 36851.369038s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Added replica on this server.
+2016-01-17T23:06:15.532942000 36853.308649s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Starting a new Raft election for term 1.
+2016-01-17T23:06:15.554062000 36853.329768s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: This server is Raft leader for term 1. Latest log index is 0.
+2016-01-17T23:06:16.864349000 36854.640103s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Configuration is changing.
+2016-01-19T13:28:13.184423000 0.017112s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-19T13:28:13.187810000 0.020497s notice: Running on Darwin 15.3.0 x86_64
+2016-01-19T13:28:13.187837000 0.020523s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-19T13:28:13.227130000 0.059816s info: Automatically using cache size of 691 MB
+2016-01-19T13:28:13.228292000 0.060979s notice: Listening for intracluster connections on port 29015
+2016-01-19T13:28:13.245634000 0.078321s notice: Listening for client driver connections on port 28015
+2016-01-19T13:28:13.245783000 0.078469s notice: Listening for administrative HTTP connections on port 8080
+2016-01-19T13:28:13.245784000 0.078470s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-19T13:28:13.245784001 0.078471s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-19T13:28:13.245785000 0.078471s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-19T13:28:13.970101000 0.802787s notice: A newer version of the RethinkDB server is available: 2.2.3-1. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-19T13:28:14.962838000 1.795571s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Starting a new Raft election for term 2.
+2016-01-19T13:28:14.991055000 1.823788s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: This server is Raft leader for term 2. Latest log index is 4.
+2016-01-21T23:29:23.283388000 0.358356s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-21T23:29:23.287134000 0.362100s notice: Running on Darwin 15.3.0 x86_64
+2016-01-21T23:29:23.287173000 0.362139s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-21T23:29:23.322408000 0.397374s info: Automatically using cache size of 2583 MB
+2016-01-21T23:29:23.323618000 0.398584s notice: Listening for intracluster connections on port 29015
+2016-01-21T23:29:23.342973000 0.417938s notice: Listening for client driver connections on port 28015
+2016-01-21T23:29:23.343094000 0.418059s notice: Listening for administrative HTTP connections on port 8080
+2016-01-21T23:29:23.343096000 0.418062s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-21T23:29:23.343097000 0.418062s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-21T23:29:23.343098000 0.418063s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-21T23:29:23.781366000 0.856332s notice: A newer version of the RethinkDB server is available: 2.2.3-1. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-21T23:29:25.337981000 2.412994s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Starting a new Raft election for term 3.
+2016-01-21T23:29:25.362311000 2.437323s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: This server is Raft leader for term 3. Latest log index is 7.
+2016-01-21T23:29:35.359912000 12.435160s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-01-23T19:32:53.301095000 0.015811s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-23T19:32:53.304728000 0.019443s notice: Running on Darwin 15.3.0 x86_64
+2016-01-23T19:32:53.304763000 0.019476s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-23T19:32:53.343122000 0.057836s info: Automatically using cache size of 673 MB
+2016-01-23T19:32:53.344185000 0.058899s notice: Listening for intracluster connections on port 29015
+2016-01-23T19:32:53.361012000 0.075726s notice: Listening for client driver connections on port 28015
+2016-01-23T19:32:53.361124000 0.075838s notice: Listening for administrative HTTP connections on port 8080
+2016-01-23T19:32:53.361125000 0.075839s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-23T19:32:53.361126000 0.075839s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-23T19:32:53.361188000 0.075902s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-23T19:32:53.975833000 0.690593s notice: A newer version of the RethinkDB server is available: 2.2.3-1. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-23T19:32:55.204129000 1.918890s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Starting a new Raft election for term 4.
+2016-01-23T19:32:55.226266000 1.941027s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: This server is Raft leader for term 4. Latest log index is 10.
+2016-01-30T16:57:54.871872000 0.237955s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-01-30T16:57:54.881785000 0.247865s notice: Running on Darwin 15.3.0 x86_64
+2016-01-30T16:57:54.881837000 0.247916s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-01-30T16:57:54.931509000 0.297589s info: Automatically using cache size of 1753 MB
+2016-01-30T16:57:54.932665000 0.298744s notice: Listening for intracluster connections on port 29015
+2016-01-30T16:57:54.955252000 0.321331s notice: Listening for client driver connections on port 28015
+2016-01-30T16:57:54.955408000 0.321487s notice: Listening for administrative HTTP connections on port 8080
+2016-01-30T16:57:54.955421000 0.321500s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-30T16:57:54.955422000 0.321501s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-30T16:57:54.955423000 0.321502s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-01-30T16:57:55.390809000 0.756888s notice: A newer version of the RethinkDB server is available: 2.2.3-1. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-30T16:57:56.356295000 1.722426s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Starting a new Raft election for term 5.
+2016-01-30T16:57:56.381918000 1.748048s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: This server is Raft leader for term 5. Latest log index is 13.
+2016-02-01T15:55:27.918504000 0.019469s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-02-01T15:55:27.926246000 0.027208s notice: Running on Darwin 15.3.0 x86_64
+2016-02-01T15:55:27.926281000 0.027242s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-02-01T15:55:27.963836000 0.064798s info: Automatically using cache size of 100 MB
+2016-02-01T15:55:27.963845000 0.064805s warn: Cache size does not leave much memory for server and query overhead (available memory: 786 MB).
+2016-02-01T15:55:27.963860000 0.064821s warn: Cache size is very low and may impact performance.
+2016-02-01T15:55:27.964928000 0.065889s notice: Listening for intracluster connections on port 29015
+2016-02-01T15:55:27.982927000 0.083888s notice: Listening for client driver connections on port 28015
+2016-02-01T15:55:27.983133000 0.084094s notice: Listening for administrative HTTP connections on port 8080
+2016-02-01T15:55:27.983134000 0.084095s notice: Listening on addresses: 127.0.0.1, ::1
+2016-02-01T15:55:27.983135000 0.084095s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-02-01T15:55:27.983135001 0.084096s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-02-01T15:55:29.304696000 1.405708s notice: A newer version of the RethinkDB server is available: 2.2.3-1. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-02-01T15:55:29.692890000 1.793902s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Starting a new Raft election for term 6.
+2016-02-01T15:55:29.716927000 1.817939s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: This server is Raft leader for term 6. Latest log index is 16.
+2016-02-03T13:17:48.816212000 0.017956s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-02-03T13:17:48.823826000 0.025567s notice: Running on Darwin 15.3.0 x86_64
+2016-02-03T13:17:48.823860000 0.025600s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-02-03T13:17:48.866487000 0.068227s info: Automatically using cache size of 206 MB
+2016-02-03T13:17:48.867733000 0.069474s notice: Listening for intracluster connections on port 29015
+2016-02-03T13:17:48.884920000 0.086660s notice: Listening for client driver connections on port 28015
+2016-02-03T13:17:48.885115000 0.086855s notice: Listening for administrative HTTP connections on port 8080
+2016-02-03T13:17:48.885117000 0.086857s notice: Listening on addresses: 127.0.0.1, ::1
+2016-02-03T13:17:48.885117001 0.086857s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-02-03T13:17:48.885118000 0.086858s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-02-03T13:17:49.494275000 0.696066s notice: A newer version of the RethinkDB server is available: 2.2.4. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-02-03T13:17:50.441049000 1.642840s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Starting a new Raft election for term 7.
+2016-02-03T13:17:50.465213000 1.667004s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: This server is Raft leader for term 7. Latest log index is 19.
+2016-02-03T22:43:36.587970000 0.017425s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-02-03T22:43:36.595009000 0.024461s notice: Running on Darwin 15.3.0 x86_64
+2016-02-03T22:43:36.595048000 0.024499s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-02-03T22:43:36.639051000 0.068503s info: Automatically using cache size of 4070 MB
+2016-02-03T22:43:36.640149000 0.069601s notice: Listening for intracluster connections on port 29015
+2016-02-03T22:43:36.657423000 0.086875s notice: Listening for client driver connections on port 28015
+2016-02-03T22:43:36.657597000 0.087048s notice: Listening for administrative HTTP connections on port 8080
+2016-02-03T22:43:36.657598000 0.087050s notice: Listening on addresses: 127.0.0.1, ::1
+2016-02-03T22:43:36.657599000 0.087050s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-02-03T22:43:36.657599001 0.087051s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-02-03T22:43:37.241365000 0.670816s notice: A newer version of the RethinkDB server is available: 2.2.4. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-02-03T22:43:37.676601000 1.106103s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Starting a new Raft election for term 8.
+2016-02-03T22:43:37.700405000 1.129907s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: This server is Raft leader for term 8. Latest log index is 22.
+2016-02-03T23:05:58.088324000 1341.393137s notice: Someone asked for the nonwhitelisted file "/ProductExplorer/".  If this should be accessible, add it to the static web assets.
+2016-02-04T00:26:51.437714000 6194.865896s notice: Someone asked for the nonwhitelisted file "/ProductExplorer/".  If this should be accessible, add it to the static web assets.
+2016-02-04T11:04:24.185004000 13676.490957s notice: Someone asked for the nonwhitelisted file "/QuotesCentral/".  If this should be accessible, add it to the static web assets.
+2016-02-04T23:38:40.789172000 0.152511s notice: Running rethinkdb 2.2.1 (CLANG 4.2 (clang-425.0.28))...
+2016-02-04T23:38:40.796540000 0.159867s notice: Running on Darwin 15.3.0 x86_64
+2016-02-04T23:38:40.796576000 0.159902s notice: Loading data from directory /Users/dpham/Developer/projects/tinderwingman/rethinkdb_data
+2016-02-04T23:38:40.836097000 0.199423s info: Automatically using cache size of 734 MB
+2016-02-04T23:38:40.837312000 0.200639s notice: Listening for intracluster connections on port 29015
+2016-02-04T23:38:40.852850000 0.216176s notice: Listening for client driver connections on port 28015
+2016-02-04T23:38:40.853083000 0.216410s notice: Listening for administrative HTTP connections on port 8080
+2016-02-04T23:38:40.853086000 0.216412s notice: Listening on addresses: 127.0.0.1, ::1
+2016-02-04T23:38:40.853087000 0.216413s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-02-04T23:38:40.853087001 0.216414s notice: Server ready, "Dats_MBP_j04" 9d812847-a3b9-428e-b04e-e0eb1b8f309d
+2016-02-04T23:38:41.244088000 0.607414s notice: A newer version of the RethinkDB server is available: 2.2.4. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-02-04T23:38:41.960175000 1.323556s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: Starting a new Raft election for term 9.
+2016-02-04T23:38:41.983354000 1.346735s info: Table 8565ac4d-0a3d-4525-b5cc-22aa986b3dea: This server is Raft leader for term 9. Latest log index is 25.

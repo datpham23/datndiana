@@ -1,0 +1,152 @@
+.index-page {
+  height: 100%;
+  width: 100%;
+  .carousel {
+    width: 100%;
+    height: 100%;
+  }
+  .details {
+    background-color: white;
+  }
+  .calendar-column {
+    display: flex;
+    justify-content: center;
+  }
+  .date-column{
+    text-align: center;
+    padding-top: 38px;
+    height: 600px;
+
+    p,address{
+      font-size: 20px;
+      font-weight: 100;
+    }
+  }
+
+  .map{
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    z-index: 1;
+  }
+  td {
+    padding: 0;
+  }
+  .calendar-container {
+    position: relative;
+    width: 472px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(185, 185, 185, 0.62);
+    border-radius: 10px;
+  }
+  .calendar-container header {
+    border-radius: 1em 1em 0 0;
+    background: #e66b6b;
+    color: #fff;
+    padding: 3em 2em;
+  }
+  .day {
+    font-size: 8em;
+    font-weight: 900;
+    line-height: 1em;
+  }
+  .month {
+    font-size: 4em;
+    line-height: 1em;
+    text-transform: lowercase;
+  }
+  .year {
+    font-size: 42px;
+    right: 20px;
+    position: absolute;
+    top: 160px;
+  }
+  .calendar {
+    background: #fff;
+    border-radius: 0 0 1em 1em;
+    color: #555;
+    display: inline-block;
+    padding: 2em;
+  }
+  .calendar thead {
+    color: #e66b6b;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .calendar td {
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+  .current-day {
+    color: #e66b6b;
+  }
+  .prev-month,
+  .next-month {
+    color: #cacaca;
+  }
+  .ring-left,
+  .ring-right {
+    position: absolute;
+    top: 230px;
+  }
+  .ring-left {
+    left: 2em;
+  }
+  .ring-right {
+    right: 2em;
+  }
+  .ring-left:before,
+  .ring-left:after,
+  .ring-right:before,
+  .ring-right:after {
+    background: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, .3), 0 -1px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .3), 0 -1px 1px rgba(0, 0, 0, .2);
+    content: "";
+    display: inline-block;
+    margin: 8px;
+    height: 32px;
+    width: 8px;
+  }
+  .heart {
+    position: absolute;
+    right: 78px;
+    bottom: 98px;
+  }
+  .heart:before,
+  .heart:after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 0;
+    width: 20px;
+    height: 32px;
+    background: #e66b6b;
+    border-radius: 20px 20px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  .heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  /*.heart{
+    animation: pounding .8s linear infinite alternate;
+  }
+  @keyframes pounding {
+    0% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }*/
+}

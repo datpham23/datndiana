@@ -46,7 +46,7 @@ app.get('/', function(req, res) {
 app.server = http.createServer(app);
 global.io = require('socket.io')(app.server);
 
-app.server.listen(port, 'localhost', function(err) {
+app.server.listen(port, '0.0.0.0', function(err) {
   if (err) {
     console.log(err);
     return;

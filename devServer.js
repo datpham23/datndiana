@@ -7,17 +7,22 @@ var r = require('rethinkdbdash')();
 var webpack = require('webpack');
 var winston = require('winston');
 var http = require('http');
+var compress = require('compression');
+
+
 winston.level = 'debug';
 winston.add(winston.transports.File, { filename: 'app.log'});
 
 
-var config = require('./webpack.config.dev');
 var nodeEnv = process.env.NODE_ENV;
 var port = process.env.PORT || 3000;
+var config = nodeEnv === 'PROD'? require('./webpack.config.prod') : require('./webpack.config.dev');
+
 
 var app = express();
 var compiler = webpack(config);
 
+app.use(compress());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(function(err, req, res, next) {

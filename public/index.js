@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+//import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
 import {createStore,
@@ -11,23 +11,23 @@ import {Router,
         Route,
         IndexRoute}             from 'react-router';
 import createHistory            from 'history/lib/createHashHistory';
-import {syncReduxAndRouter,
-        routeReducer}           from 'redux-simple-router';
-import DevTools                 from './components/DevTools';
+// import {syncReduxAndRouter,
+//         routeReducer}           from 'redux-simple-router';
+// import DevTools                 from './components/DevTools';
 import co                       from 'co';
 
 
 
 
 const reducers = combineReducers({
-  routing: routeReducer
+// routing: routeReducer
 });
 
 
 let middleWare = [thunk];
 let createStoreWithMiddleware = compose(
-            applyMiddleware(...middleWare),
-            DevTools.instrument()
+            applyMiddleware(...middleWare)
+            //,DevTools.instrument()
           )(createStore);
 
 let store = createStoreWithMiddleware(reducers);
@@ -36,7 +36,7 @@ let store = createStoreWithMiddleware(reducers);
 const history = createHistory({
   queryKey: false
 });
-syncReduxAndRouter(history, store);
+//syncReduxAndRouter(history, store);
 
 
 import App       from './App';
@@ -64,7 +64,7 @@ render(
             <Route path='photos' getComponent={components.photos}/>
           </Route>
         </Router>
-        <DevTools/>
+        {/*<DevTools/>*/}
       </div>
     </Provider>
   </div>

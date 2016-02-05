@@ -29,7 +29,6 @@ const App = React.createClass({
     $(window).unBind('scroll',this.onScroll)
   },
   render(){
-    console.log(this.props.location)
     return (
       <div className="app-root">
         <nav id="mainNav" className={classnames('navbar navbar-default navbar-fixed-top',{'affix' : this.state.invertNav})}>

@@ -13,7 +13,7 @@ winston.add(winston.transports.File, { filename: 'app.log'});
 
 var config = require('./webpack.config.dev');
 var nodeEnv = process.env.NODE_ENV;
-var port = nodeEnv.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 var app = express();
 var compiler = webpack(config);

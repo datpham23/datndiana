@@ -42,9 +42,14 @@ syncReduxAndRouter(history, store);
 import App       from './App';
 
 const components = {
-  swipes : (location, cb)=>{
+  index : (location, cb)=>{
     require.ensure([], (require) => {
       cb(null, require('./pages/IndexPage').default);
+    });
+  },
+  photos : (location, cb)=>{
+    require.ensure([], (require) => {
+      cb(null, require('./pages/PhotosPage').default);
     });
   }
 }
@@ -55,7 +60,8 @@ render(
       <div>
         <Router history={history}>
           <Route path='/' component={App}>
-            <IndexRoute getComponent={components.swipes}/>
+            <IndexRoute getComponent={components.index}/>
+            <Route path='photos' getComponent={components.photos}/>
           </Route>
         </Router>
         <DevTools/>

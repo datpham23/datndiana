@@ -29,6 +29,7 @@ const App = React.createClass({
     $(window).unBind('scroll',this.onScroll)
   },
   render(){
+    console.log(this.props.location)
     return (
       <div className="app-root">
         <nav id="mainNav" className={classnames('navbar navbar-default navbar-fixed-top',{'affix' : this.state.invertNav})}>
@@ -44,9 +45,6 @@ const App = React.createClass({
             </div>
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav navbar-right">
-                <li>
-                  <a className="page-scroll" href="#details">Details</a>
-                </li>
                 <li>
                   <a className="page-scroll" href="#photos">Photos</a>
                 </li>

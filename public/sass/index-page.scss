@@ -46,7 +46,7 @@
   }
   .calendar-container header {
     border-radius: 1em 1em 0 0;
-    background: #e66b6b;
+    background: #F2687F;
     color: #fff;
     padding: 3em 2em;
   }
@@ -74,7 +74,7 @@
     padding: 2em;
   }
   .calendar thead {
-    color: #e66b6b;
+    color: #F2687F;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -127,7 +127,7 @@
     top: 0;
     width: 20px;
     height: 32px;
-    background: #e66b6b;
+    background: #F2687F;
     border-radius: 20px 20px 0 0;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
@@ -137,16 +137,4 @@
     transform: rotate(45deg);
     transform-origin: 100% 100%;
   }
-
-  /*.heart{
-    animation: pounding .8s linear infinite alternate;
-  }
-  @keyframes pounding {
-    0% {
-      transform: scale(1.5);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }*/
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../sass/photos-page.scss';
-import ReactDOMServer from 'react-dom/server';
+
 
 export default React.createClass({
   componentDidMount() {

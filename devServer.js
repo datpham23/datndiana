@@ -42,6 +42,7 @@ app.use(require('webpack-hot-middleware')(compiler));
 app.use(express.static(path.join(__dirname, '/public')));
 
 
+app.use('/guests',require('./src/routes/guestsRoute'));
 app.use('/rsvp',require('./src/routes/rsvpRoute'));
 
 app.get('/', function(req, res) {

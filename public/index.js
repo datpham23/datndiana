@@ -11,23 +11,24 @@ import {Router,
         Route,
         IndexRoute}             from 'react-router';
 import createHistory            from 'history/lib/createHashHistory';
-// import {syncReduxAndRouter,
-//         routeReducer}           from 'redux-simple-router';
-// import DevTools                 from './components/DevTools';
+import {syncReduxAndRouter,
+        routeReducer}           from 'redux-simple-router';
+import DevTools                 from './components/DevTools';
 import co                       from 'co';
-
+import guests                   from './reducers/guests';
 
 
 
 const reducers = combineReducers({
-// routing: routeReducer
+  routing: routeReducer,
+  guests : guests
 });
 
 
 let middleWare = [thunk];
 let createStoreWithMiddleware = compose(
             applyMiddleware(...middleWare)
-            //,DevTools.instrument()
+            ,DevTools.instrument()
           )(createStore);
 
 let store = createStoreWithMiddleware(reducers);
@@ -36,7 +37,7 @@ let store = createStoreWithMiddleware(reducers);
 const history = createHistory({
   queryKey: false
 });
-//syncReduxAndRouter(history, store);
+syncReduxAndRouter(history, store);
 
 
 import App       from './App';
@@ -51,6 +52,11 @@ const components = {
     require.ensure([], (require) => {
       cb(null, require('./pages/PhotosPage').default);
     });
+  },
+  admin : (location, cb)=>{
+    require.ensure([], (require) => {
+      cb(null, require('./pages/AdminPage').default);
+    });
   }
 }
 
@@ -62,9 +68,10 @@ render(
           <Route path='/' component={App}>
             <IndexRoute getComponent={components.index}/>
             <Route path='photos' getComponent={components.photos}/>
+            <Route path='admin' getComponent={components.admin}/>
           </Route>
         </Router>
-        {/*<DevTools/>*/}
+        <DevTools/>
       </div>
     </Provider>
   </div>

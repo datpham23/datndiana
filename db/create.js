@@ -28,10 +28,10 @@ co(function *() {
 
     yield r.db(db)
       .table(table)
-      .indexCreate('_id')
+      .indexCreate('id')
       .run()
       .then(function() {
-        console.log(`Created Index _id  on Table '${table}'.`);
+        console.log(`Created Index id  on Table '${table}'.`);
       });
 
   } catch (e) {

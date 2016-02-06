@@ -2,7 +2,6 @@ html, body {
   height: 100%;
   padding: 0px;
   margin: 0px;
-  font-family: 'blackjackregular';
 }
 
 html,
@@ -11,7 +10,7 @@ body {
   width: 100%;
 }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
   border-color: #F2687F;
@@ -31,14 +30,7 @@ a:hover,
 a:focus {
   color: #eb3812;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-}
+
 
 .navbar-default {
   background-color: white;
@@ -229,15 +221,6 @@ fieldset[disabled] .btn-primary.active {
 }
 
 
-
-
-/*
-canvas{
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-*/
 .app-root{
+  overflow-x: hidden;
 }

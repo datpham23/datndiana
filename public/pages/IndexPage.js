@@ -76,6 +76,11 @@ const style = [
 ];
 
 export default React.createClass({
+  getInitialState: function() {
+    return {
+      countDown : ''
+    };
+  },
   componentDidMount() {
     this.map = new google.maps.Map(document.getElementById('teaMap'), {
       center: {
@@ -136,6 +141,43 @@ export default React.createClass({
       infowindow2.open(this.map, marker2);
     });
 
+
+
+    var end = new Date('05/28/2016 10:00 AM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    const showRemaining = ()=>{
+      var now = new Date();
+      var distance = end - now;
+      if (distance < 0) {
+
+          clearInterval(timer);
+          document.getElementById(id).innerHTML = 'EXPIRED!';
+
+          return;
+      }
+      var days = Math.floor(distance / _day);
+      var hours = Math.floor((distance % _day) / _hour);
+      var minutes = Math.floor((distance % _hour) / _minute);
+      var seconds = Math.floor((distance % _minute) / _second);
+
+      var outPut = days + ':';
+      outPut += hours + ':';
+      outPut += minutes + ':';
+      outPut += seconds + '';
+
+      this.setState({
+        countDown : outPut
+      })
+    }
+
+    timer = setInterval(showRemaining, 1000);
+
   },
   render() {
     return (
@@ -143,6 +185,9 @@ export default React.createClass({
         <Carousel interval={2000}>
           <CarouselItem>
             <img width='100%' height='100%' src="/img/cover1.jpg"/>
+              <div className="carousel-caption">
+
+              </div>
           </CarouselItem>
           <CarouselItem>
             <img width='100%' height='100%' src="/img/cover2.jpg"/>
@@ -250,11 +295,15 @@ export default React.createClass({
             </div>
           </div>
         </div>
-        <div className="maps">
+        <div className="map-container">
           <div id="teaMap" style={{
             height: '700px',
             width: '100%'
           }}/>
+        </div>
+        <div className="count-down-container">
+          <p className="count-down">{this.state.countDown}</p>
+          <p className="caption">Til The Big Day!</p>
         </div>
       </div>
     )

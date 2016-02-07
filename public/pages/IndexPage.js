@@ -90,7 +90,8 @@ export default React.createClass({
         lat: 37.368568,
         lng: -121.84053
       },
-      zoom: 10
+      zoom: 10,
+      scrollwheel: false
     });
 
     this.map.setOptions({styles: style});

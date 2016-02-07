@@ -30,8 +30,8 @@ export default (state = Immutable.fromJS(initialState), action)=>{
     case Constants.FETCH_GUEST_ERROR:
       return state.merge({
         isFetching : false,
-        fetchError : false,
-        errorMessage : '',
+        fetchError : true,
+        errorMessage : action.errorMessage,
         guest : action.guest
       });
     case Constants.ADD_GUEST:

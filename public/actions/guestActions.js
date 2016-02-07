@@ -121,3 +121,35 @@ export const sendEmail = ()=>{
     })
   }
 }
+
+export const updateTextMessageUrl = (url)=>{
+  return {
+    type : Constants.UPDATE_TEXT_MESSAGE_URL,
+    url : url
+  }
+}
+export const updateTextMessage = (message)=>{
+  return {
+    type : Constants.UPDATE_TEXT_MESSAGE,
+    message : message
+  }
+}
+
+
+export const sendTextMessage = ()=>{
+  return (dispatch,state)=>{
+    let guestsStore = state().guests.toJS();
+    dispatch({
+      type : Constants.SENDING_TEXT_MESSAGE
+    })
+    API.sendTextMessage({
+      url : guestsStore.messageUrl,
+      message : guestsStore.textMessage
+    }).then(res=>{
+      dispatch({
+        type : Constants.SENT_TEXT_MESSAGE
+      });
+      $.growl({ title: "Text Message", message: "Sent" });
+    })
+  }
+}

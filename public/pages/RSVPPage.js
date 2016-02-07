@@ -26,6 +26,15 @@ const RSVPPage = React.createClass({
           </div>
         </div>
       )
+    if(rsvpStore.fetchError)
+      return (
+        <div className="rsvp-page">
+          <div className="well">
+            <div>{rsvpStore.errorMessage}</div>
+          </div>
+        </div>
+      )
+
 
     return (
       <div className="rsvp-page">

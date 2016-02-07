@@ -8,13 +8,9 @@ $white:       #ffffff;
   min-height: 200px;
 
   .mail-form{
-    margin: 60px auto;
-    max-width: 500px;
     overflow: hidden;
-    width: 400px;
     border-radius: 5px;
-    width: 500px;
-    padding: 25px;
+    width: 100%;
 
     .email,.subject,.message{
       font-size: 18px;

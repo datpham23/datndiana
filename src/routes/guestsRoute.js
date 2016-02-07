@@ -75,5 +75,17 @@ router.post('/send-email', (req, res) => {
   });
 });
 
+router.post('/send-text-message', (req, res) => {
+  console.log(req.body)
+  res.send('Sending Text Message To Guests')
+  co(function*(){
+    var results = yield r.db(db).table(table).run();
+    res.send('Sending Text Message To Guests')
+    results.forEach(guest=>{
+
+    });
+  });
+});
+
 
 module.exports = router;

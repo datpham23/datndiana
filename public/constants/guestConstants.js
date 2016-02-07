@@ -10,5 +10,9 @@ export default {
   UPDATE_EMAIL_SUBJECT : '/guests/update-email-subject',
   UPDATE_EMAIL_MESSAGE : '/guests/update-email-message',
   SENDING_EMAIL : '/guests/sending-email',
-  SENT_EMAIL : '/guests/sent-email'
+  SENT_EMAIL : '/guests/sent-email',
+  UPDATE_TEXT_MESSAGE_URL : '/guest/update-text-message-url',
+  UPDATE_TEXT_MESSAGE : '/guest/update-text-message',
+  SENDING_TEXT_MESSAGE : '/guest/sending-text-message',
+  SENT_TEXT_MESSAGE : '/guest/sent-text-message',
 }

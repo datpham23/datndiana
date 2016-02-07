@@ -42,3 +42,12 @@ export const rsvp = (id,guests)=>{
     entity : guests
   })
 }
+
+
+export const sendTextMessage = (message)=>{
+  return rest({
+    method : 'POST',
+    path : '/guests/send-text-message',
+    entity : message
+  })
+}

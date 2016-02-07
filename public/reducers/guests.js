@@ -12,7 +12,10 @@ const initialState = {
   guests : [],
   emailSubject : '',
   emailMessage : '',
-  sendingEmail : false
+  sendingEmail : false,
+  messageUrl : '',
+  textMessage : '',
+  sendingTextMessage : false
 };
 
 export default (state = Immutable.fromJS(initialState), action)=>{
@@ -67,6 +70,18 @@ export default (state = Immutable.fromJS(initialState), action)=>{
         sendingEmail : false,
         emailSubject : '',
         emailMessage : ''
+      });
+    case Constants.UPDATE_TEXT_MESSAGE_URL:
+      return state.set('messageUrl',action.url);
+    case Constants.UPDATE_TEXT_MESSAGE:
+      return state.set('textMessage',action.message);
+    case Constants.SENDING_TEXT_MESSAGE:
+      return state.set('sendingTextMessage',true);
+    case Constants.SENT_TEXT_MESSAGE:
+      return state.merge({
+        sendingTextMessage : false,
+        messageUrl : '',
+        textMessage : ''
       });
     default:
       return state;

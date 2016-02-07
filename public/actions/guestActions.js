@@ -1,14 +1,25 @@
 import Constants      from '../constants/guestConstants';
 import * as API       from '../api/api';
-import _              from 'lodash';
 import co             from 'co';
 
 
 
 export const getGuests = ()=>{
   return (dispatch,state)=>{
-
-
+    dispatch({
+      type : Constants.FETCHING_GUESTS
+    });
+    API.fetchGuests().then(res=>{
+      dispatch({
+        type : Constants.RECEIVED_GUESTS,
+        guests : res.entity
+      });
+    }).catch(res=>{
+      console.log(res)
+      dispatch({
+        type : Constants.FAILED_FETCHING
+      });
+    });
   }
 }
 
@@ -27,7 +38,7 @@ export const hideModal = ()=>{
 
 export const updateGuestForm = (value)=>{
   return {
-    type : Constants.UPDATE_GUESTS_FROM,
+    type : Constants.UPDATE_GUESTS_FORM,
     value : value
   }
 }
@@ -61,6 +72,7 @@ export const saveGuests = (value)=>{
           type : Constants.SAVED_GUESTS,
           message : res.entity
         });
+        dispatch(getGuests());
       }).catch(res=>{
         dispatch({
           type : Constants.SAVED_GUESTS_ERROR,
@@ -74,5 +86,38 @@ export const saveGuests = (value)=>{
         message : error
       });
     }
+  }
+}
+
+
+export const updateEmailSubject = (subject)=>{
+  return {
+    type : Constants.UPDATE_EMAIL_SUBJECT,
+    subject : subject
+  }
+}
+export const updateEmailMessage = (message)=>{
+  return {
+    type : Constants.UPDATE_EMAIL_MESSAGE,
+    message : message
+  }
+}
+
+
+export const sendEmail = ()=>{
+  return (dispatch,state)=>{
+    let guestsStore = state().guests.toJS();
+    dispatch({
+      type : Constants.SENDING_EMAIL
+    })
+    API.sendEmail({
+      subject : guestsStore.emailSubject,
+      message : guestsStore.emailMessage
+    }).then(res=>{
+      dispatch({
+        type : Constants.SENT_EMAIL
+      });
+      $.growl({ title: "Email", message: "Sent" });
+    })
   }
 }

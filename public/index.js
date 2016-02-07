@@ -16,11 +16,13 @@ import {syncReduxAndRouter,
 import DevTools                 from './components/DevTools';
 import co                       from 'co';
 import guests                   from './reducers/guests';
+import rsvp                     from './reducers/rsvp';
 
 
 
 const reducers = combineReducers({
   routing: routeReducer,
+  rsvp : rsvp,
   guests : guests
 });
 
@@ -57,6 +59,21 @@ const components = {
     require.ensure([], (require) => {
       cb(null, require('./pages/AdminPage').default);
     });
+  },
+  adminOverview : (location, cb)=>{
+    require.ensure([], (require) => {
+      cb(null, require('./pages/AdminOverview').default);
+    });
+  },
+  adminMessaging : (location, cb)=>{
+    require.ensure([], (require) => {
+      cb(null, require('./pages/AdminMessaging').default);
+    });
+  },
+  rsvp : (location, cb)=>{
+    require.ensure([], (require) => {
+      cb(null, require('./pages/RSVPPage').default);
+    });
   }
 }
 
@@ -68,7 +85,11 @@ render(
           <Route path='/' component={App}>
             <IndexRoute getComponent={components.index}/>
             <Route path='photos' getComponent={components.photos}/>
-            <Route path='admin' getComponent={components.admin}/>
+            <Route path='admin' getComponent={components.admin}>
+              <IndexRoute getComponent={components.adminOverview}/>
+              <Route path='messaging' getComponent={components.adminMessaging}/>
+            </Route>
+            <Route path='rsvp/:guestId' getComponent={components.rsvp}/>
           </Route>
         </Router>
         <DevTools/>

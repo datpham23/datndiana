@@ -3,23 +3,13 @@
   background-color: #D4A7A7;
   padding-top: 50px;
 
+  .admin-children{
+    padding-top: 15px;
+  }
+
   .well{
     width: 90%;
     margin: 20px auto;
-
-    .button-container{
-      text-align: right;
-
-      *{
-        margin: 0 2px;
-      }
-    }
-  }
-}
-
-.guest-import{
-  textarea{
-    width: 100%;
-    resize: vertical;;
+    background-color: white;
   }
 }

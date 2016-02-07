@@ -45,13 +45,13 @@ const App = React.createClass({
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav navbar-right">
                 <li>
+                  <a className="page-scroll" href="#/">Details</a>
+                </li>
+                <li>
                   <a className="page-scroll" href="#photos">Photos</a>
                 </li>
                 <li>
                   <a className="page-scroll" href="#party">Meet The Party</a>
-                </li>
-                <li>
-                  <a className="page-scroll" href="#rsvp">RSVP</a>
                 </li>
               </ul>
             </div>

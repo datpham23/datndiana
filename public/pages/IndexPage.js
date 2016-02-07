@@ -81,6 +81,9 @@ export default React.createClass({
       countDown : ''
     };
   },
+  componentWillUnmount: function() {
+    clearInterval(this.timer);
+  },
   componentDidMount() {
     this.map = new google.maps.Map(document.getElementById('teaMap'), {
       center: {
@@ -149,7 +152,7 @@ export default React.createClass({
     var _minute = _second * 60;
     var _hour = _minute * 60;
     var _day = _hour * 24;
-    var timer;
+    this.timer;
 
     const showRemaining = ()=>{
       var now = new Date();
@@ -176,7 +179,7 @@ export default React.createClass({
       })
     }
 
-    timer = setInterval(showRemaining, 1000);
+    this.timer = setInterval(showRemaining, 1000);
 
   },
   render() {

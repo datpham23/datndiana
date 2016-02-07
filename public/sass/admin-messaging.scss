@@ -1,0 +1,33 @@
+
+$black:       #1a1a1a;
+$blue:        #3498db;
+$gray:        #cbd0d3;
+$white:       #ffffff;
+
+.admin-messaging{
+  min-height: 200px;
+
+  .mail-form{
+    margin: 60px auto;
+    max-width: 500px;
+    overflow: hidden;
+    width: 400px;
+    border-radius: 5px;
+    width: 500px;
+    padding: 25px;
+
+    .email,.subject,.message{
+      font-size: 18px;
+      margin-bottom: 10px;
+
+    }
+    textarea{
+      width: 100%;
+      resize: vertical;
+    }
+  }
+
+  .button-container{
+    text-align: right;
+  }
+}

@@ -1,0 +1,21 @@
+.admin-overview{
+  .button-container{
+    text-align: right;
+
+    *{
+      margin: 0 2px;
+    }
+  }
+  .griddle{
+    margin-top: 20px;
+    .filter-container{
+      width: 200px;
+    }
+  }
+}
+.guest-import{
+  textarea{
+    width: 100%;
+    resize: vertical;;
+  }
+}

@@ -28,7 +28,6 @@ co(function *() {
 
     yield r.db(db)
       .table(table)
-      .indexCreate('id')
       .run()
       .then(function() {
         console.log(`Created Index id  on Table '${table}'.`);

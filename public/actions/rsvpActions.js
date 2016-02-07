@@ -53,7 +53,7 @@ export const rsvp = (id,history)=>{
         type : Constants.SAVED
       });
       $.growl({ title: "RSVP'd", message : 'Thanks!'});
-      //setTimeout(()=>{history.pushState(null,'/')},2000);
+      setTimeout(()=>{history.pushState(null,'/')},2000);
     }).catch(res=>{
       dispath({
         type : Constants.SAVE_ERROR,

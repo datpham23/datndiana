@@ -3,18 +3,36 @@
   justify-content: center;
   align-content: center;
 
-  .well{
-    margin-top: 200px;
-    height: 400px;
-    box-shadow: 0 0 20px #8F8F8F;
+  .photos-container{
+    margin-top: 50px;
+    padding: 15px;
+  }
+  article {
+    -moz-column-width: 20em;
+    -webkit-column-width: 20em;
+    -moz-column-gap: 0px;
+    -webkit-column-gap: 0px;
+  }
+  section {
+    display: inline-block;
+    margin: 0px;
+    width: 100%;
+    padding: 2px;
+    background: white;
   }
 
-  canvas{
+  .preview{
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .background{
     height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    background: #F2687F;
     z-index: -1;
   }
 }

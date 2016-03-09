@@ -53,6 +53,9 @@ const App = React.createClass({
                 <li>
                   <a className="page-scroll" href="#party">Meet The Party</a>
                 </li>
+                <li>
+                  <a className="page-scroll" href="#rsvp">RSVP</a>
+                </li>
               </ul>
             </div>
           </div>

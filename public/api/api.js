@@ -38,10 +38,20 @@ export const fetchGuest = (id)=>{
 export const rsvp = (id,guests)=>{
   return rest({
     method : 'POST',
-    path : `/rsvp/${id}`,
+    path : `/rsvp/link/${id}`,
     entity : guests
   })
 }
+
+
+export const manualRSVP = (guest)=>{
+  return rest({
+    method : 'POST',
+    path : `/rsvp/manual`,
+    entity : guest
+  })
+}
+
 
 
 export const sendTextMessage = (message)=>{

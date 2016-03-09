@@ -11,24 +11,37 @@ const db = 'dnd';
 const table = 'guests';
 
 
-router.post('/:id', (req, res) => {
-  co(function*(){
+router.post('/link/:id', (req, res) => {
+  co(function*() {
     winston.log(`RSVP ${req.params.id} : ${req.body}`);
     var guest = yield r.db(db)
-                        .table(table)
-                        .get(req.params.id);
-    if(!guest)
+      .table(table)
+      .get(req.params.id);
+    if (!guest)
       res.status(404).send('Cannot find guest');
 
     guest.guests = req.body;
     guest.hasRSVP = true;
 
     var result = yield r.db(db)
-                        .table(table)
-                        .update(guest);
+      .table(table)
+      .update(guest);
 
     res.send('RSVP Completed');
-    console.log(guest);
+  })
+
+});
+
+
+router.post('/manual', (req, res) => {
+  co(function*() {
+    winston.log(`RSVP : ${req.body}`);
+
+    var dbRes = yield r.db(db)
+      .table(table)
+      .insert(req.body);
+
+    res.send('RSVP Completed');s
   })
 
 });

@@ -2,7 +2,7 @@
   height: 100vh;
   background-color: #D4A7A7;
   padding-top: 50px;
-  background: url(../img/cover1.jpg) no-repeat center center fixed;
+  background: url(../img/DDE-22.jpg) no-repeat center center fixed;
   background-size: cover;
 
   .envelope{
@@ -100,60 +100,8 @@
     padding: 15px;
     font-size: 16px;
   }
+
+  .guest-name{
+    text-align: right;
+  }
 }
-
-
-
-
-/*
-#envelope
-
-#envelope
-
-#envelope:hover #card {
-	top:-20px;
-}
-*/
-
-
-
-
-/*
-#dribbble{
-  top: 25px;
-  left: 90px;
-  right: -25px;
-  background: #ef5b93;
-  height: 80px;
-  width: 80px;
-  border: 5px solid #c5376d;
-  border-radius: 100%;
-  overflow: hidden;
-  position: absolute;
-  box-shadow: 0 0 0 5px #eee,
-              inset -20px -60px 0 -22px #ef5b93,
-              inset -20px -60px 0 -17px #c5376d;}
-
-#dribbble:before,
-#dribbble:after{
-  content:'';
-  display: block;
-  border: 5px solid #c5376d;
-  border-radius: 100%;
-  width: 170px;
-  height: 190px;
-  background: transparent;
-  position: absolute;
-}
-
-#dribbble:before{
-  top: 30px;
-  left: -18px;
-}
-
-#dribbble:after{
-  top: -30px;
-  left: -120px;
-  height: 200px;
-}
-*/

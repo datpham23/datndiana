@@ -66,7 +66,7 @@ router.post('/send-email', (req, res) => {
         to: guest.email,
         subject: req.body.subject.replace(/{name}/g,guest.name).replace(/{id}/g,guest.id),
         text: req.body.message.replace(/{name}/g,guest.name).replace(/{id}/g,guest.id),
-        //html: '<b>Hello world 🐴</b>'
+        html: ''
       };
 
       transporter.sendMail(mailOptions, function(error, info){

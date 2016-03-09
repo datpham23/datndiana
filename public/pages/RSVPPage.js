@@ -1,6 +1,5 @@
 import React from 'react'
 import '../sass/rsvp-page.scss';
-import '../actions/rsvpActions'
 import * as RSVPActions from '../actions/rsvpActions';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -33,12 +32,12 @@ const RSVPPage = React.createClass({
             <div>{rsvpStore.errorMessage}</div>
           </div>
         </div>
-      )
+    )
 
 
     return (
       <div className="rsvp-page">
-        <div className={classnames('envelope', {'animage' : rsvpStore.saving})}>
+        <div className={classnames('envelope', {'animate' : rsvpStore.saving})}>
           <div className="card">
             <p>
               Dear Dat and Diana,
@@ -74,10 +73,16 @@ const RSVPPage = React.createClass({
                 null
             }
             <div className="info">{`You can invite up to ${rsvpStore.guest.numberOfGuests} guest(s)`}</div>
+            <div className="guest-name">
+              <div>
+                Sincerely,
+              </div>
+              {rsvpStore.guest.name}
+            </div>
             <div className="button-container">
               <button
                 disabled={rsvpStore.saving}
-                className="btn btn-default"
+                className="btn btn-default rsvp-button"
                 onClick={this.actions.rsvp.bind(null,this.props.params.guestId,this.props.history)}>
                 RSVP
               </button>

@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    'eventsource-polyfill', // necessary for hot reloading with IE
+    'eventsource-polyfill', //
     'webpack-hot-middleware/client',
     './public/index'
   ],
@@ -27,7 +27,7 @@ module.exports = {
       { test: /\.css$/, loader: "style!css" },
       { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader!autoprefixer-loader?browsers=last 10 version'},
       { test: /\.tff|.woff2|.woff|.svg|.eot|.tff/, loader: 'null' },
-      { test: /\.jpg|.png/, loader: 'url' }
+      { test: /\.jpg|.png/, loader: 'url-loader?limit=8192' }
     ]
   }
 };

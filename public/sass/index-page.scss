@@ -24,7 +24,7 @@
       font-weight: 100;
     }
   }
-  
+
   table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -41,6 +41,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(270deg, #233767, #1f8198, #F2687F);
+    background-size: 800% 800%;
+    -webkit-animation: Background 20s ease infinite;
+    -moz-animation: Background 20s ease infinite;
+    animation: Background 20s ease infinite;
 
     .count-down{
       font-size: 100px;
@@ -155,4 +160,20 @@
     transform: rotate(45deg);
     transform-origin: 100% 100%;
   }
+}
+
+@-webkit-keyframes Background {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes Background {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes Background {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }

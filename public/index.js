@@ -17,13 +17,15 @@ import DevTools                 from './components/DevTools';
 import co                       from 'co';
 import guests                   from './reducers/guests';
 import rsvp                     from './reducers/rsvp';
+import manualRSVP               from './reducers/manualRSVP';
 
 
 
 const reducers = combineReducers({
   routing: routeReducer,
   rsvp : rsvp,
-  guests : guests
+  guests : guests,
+  manualRSVP : manualRSVP
 });
 
 
@@ -74,6 +76,11 @@ const components = {
     require.ensure([], (require) => {
       cb(null, require('./pages/RSVPPage').default);
     });
+  },
+  manualRSVP : (location, cb)=>{
+    require.ensure([], (require) => {
+      cb(null, require('./pages/ManualRSVP').default);
+    });
   }
 }
 
@@ -89,6 +96,7 @@ render(
               <IndexRoute getComponent={components.adminOverview}/>
               <Route path='messaging' getComponent={components.adminMessaging}/>
             </Route>
+            <Route path='rsvp' getComponent={components.manualRSVP}/>
             <Route path='rsvp/:guestId' getComponent={components.rsvp}/>
           </Route>
         </Router>

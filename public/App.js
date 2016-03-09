@@ -40,21 +40,21 @@ const App = React.createClass({
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <a className="navbar-brand page-scroll" href="#/">Dat & Diana</a>
+              <a className="navbar-brand " href="#/">Dat & Diana</a>
             </div>
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav navbar-right">
                 <li>
-                  <a className="page-scroll" href="#/">Details</a>
+                  <a  href="#/">Details</a>
                 </li>
                 <li>
-                  <a className="page-scroll" href="#photos">Photos</a>
+                  <a  href="#photos">Photos</a>
                 </li>
                 <li>
-                  <a className="page-scroll" href="#party">Meet The Party</a>
+                  <a  href="#party">Meet The Party</a>
                 </li>
                 <li>
-                  <a className="page-scroll" href="#rsvp">RSVP</a>
+                  <a  href="#rsvp">RSVP</a>
                 </li>
               </ul>
             </div>

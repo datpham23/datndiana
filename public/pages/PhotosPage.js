@@ -8,17 +8,70 @@ import '../sass/photos-page.scss';
 export default React.createClass({
   getInitialState: function() {
     return {
-      expandedIndex : -1
+      index : -1
     };
+  },
+  onExpand(i){
+    this.setState({
+      index : i
+    });
+  },
+  componentDidMount: function() {
+    this.resizeImages();
+  },
+  componentDidUpdate(){
+    // let el = document.querySelector('section.expanded');
+    // if(el){
+    //   var screenImage = $('section.expanded .preview');
+    //
+    //   var nativeImage = new Image();
+    //   nativeImage.src = screenImage.attr("src");
+    //   var imageWidth = nativeImage.width;
+    //   var imageHeight = nativeImage.height;
+    //   let isPotrait = nativeImage.height > nativeImage.width;
+    //
+    //   if(isPotrait)
+    //     $('section.expanded .preview').css('height','100%').css('width','auto');
+    //   else
+    //     $('section.expanded .preview').css('width','100%').css('height','auto');
+    // }
+
+    this.resizeImages();
+  },
+  resizeImages(){
+    $('.preview').each(function(i,el){
+      var screenImage = $(this);
+
+      var nativeImage = new Image();
+      nativeImage.src = screenImage.attr("src");
+      var imageWidth = nativeImage.width;
+      var imageHeight = nativeImage.height;
+      let isPotrait = nativeImage.height > nativeImage.width;
+
+
+      if($(this).hasClass('expanded')){
+        if(isPotrait)
+          $(this).css('height','100%').css('width','auto');
+        else
+          $(this).css('width','100%').css('height','auto');
+      }else{
+        $(this).css('height','100%').css('width','100%');
+      }
+    })
   },
   render() {
     let photos = [];
 
     for(var i=1; i<=33;i++){
-      let className = i === this.state.expandedIndex? 'expanded' : '';
+      let className = i === this.state.index? 'expanded' : '';
       photos.push((
-        <section className={className}>
-          <img className="preview" src={`/img/DDE-${i}.jpg`}/>
+        <section className={className} key={`/img/DDE-${i}.jpg`}>
+          <img
+            className={"preview "+className }
+            src={`/img/DDE-${i}.jpg`}
+            onClick={this.onExpand.bind(null,i)}
+          />
+        <div className="hide-button" onClick={this.onExpand.bind(null,-1)}>×</div>
         </section>
       ));
     }
@@ -31,7 +84,6 @@ export default React.createClass({
             {photos}
           </article>
         </div>
-
       </div>
     )
   }

@@ -19,11 +19,47 @@
     width: 100%;
     padding: 2px;
     background: white;
+    transition: all 0.5s ease;
+    text-align: center;
+
+    .hide-button{
+      display: none;
+    }
+
+    &.expanded{
+      position: fixed;
+      top : 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999999;
+      cursor: pointer;
+    }
+  }
+
+  section.expanded{
+    .hide-button{
+      font-size: 70px;
+      color: white;
+      position: fixed;
+      right: 30px;
+      top: 18px;
+      display: block;
+      background-color: #F2687F;
+      border-radius: 100%;
+      height: 100px;
+      width: 100px;
+      opacity: .8;
+    }
+    .preview{
+      cursor: auto;
+    }
   }
 
   .preview{
     width: 100%;
     min-height: 200px;
+    cursor: pointer;
   }
 
   .background{

@@ -1,0 +1,20 @@
+.instagram-feed{
+  padding-top: 60px;
+
+  .posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .background{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #A68B8B;
+    z-index: -1;
+  }
+}

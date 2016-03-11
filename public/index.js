@@ -1,4 +1,4 @@
-//import 'babel-polyfill';
+import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
 import {createStore,
@@ -57,6 +57,16 @@ const components = {
       cb(null, require('./pages/PhotosPage').default);
     });
   },
+  photosEnlarge : (location, cb)=>{
+    require.ensure([], (require) => {
+      cb(null, require('./pages/PhotoEnlarge').default);
+    });
+  },
+  instagramFeed : (location, cb)=>{
+    require.ensure([], (require) => {
+      cb(null, require('./pages/InstagramFeed').default);
+    });
+  },
   admin : (location, cb)=>{
     require.ensure([], (require) => {
       cb(null, require('./pages/AdminPage').default);
@@ -92,6 +102,8 @@ render(
           <Route path='/' component={App}>
             <IndexRoute getComponent={components.index}/>
             <Route path='photos' getComponent={components.photos}/>
+            <Route path='photos/:id' getComponent={components.photosEnlarge}/>
+            <Route path='instagram-feed' getComponent={components.instagramFeed}/>
             <Route path='admin' getComponent={components.admin}>
               <IndexRoute getComponent={components.adminOverview}/>
               <Route path='messaging' getComponent={components.adminMessaging}/>

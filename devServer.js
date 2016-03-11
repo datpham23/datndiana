@@ -44,13 +44,14 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 app.use('/guests',require('./src/routes/guestsRoute'));
 app.use('/rsvp',require('./src/routes/rsvpRoute'));
+app.use('/instagram',require('./src/routes/instagramRoute'));
 
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.server = http.createServer(app);
-global.io = require('socket.io')(app.server);
+//global.io = require('socket.io')(app.server);
 
 app.server.listen(port, '0.0.0.0', function(err) {
   if (err) {

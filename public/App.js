@@ -47,8 +47,12 @@ const App = React.createClass({
                 <li>
                   <a  href="#/">Details</a>
                 </li>
-                <li>
-                  <a  href="#photos">Photos</a>
+                <li className="dropdown">
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Photos <span className="caret"></span></a>
+                  <ul className="dropdown-menu">
+                    <li><a href="#/photos">Photos</a></li>
+                    <li><a href="#/instagram-feed">Live Instagram Feed</a></li>
+                  </ul>
                 </li>
                 <li>
                   <a  href="#party">Meet The Party</a>

@@ -61,3 +61,12 @@ export const sendTextMessage = (message)=>{
     entity : message
   })
 }
+
+export const getInstagramFeed = (tag)=>{
+  return rest({
+    path : '/instagram/hashtag',
+    params : {
+      tag : tag
+    }
+  })
+}

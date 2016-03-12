@@ -91,6 +91,11 @@ const components = {
     require.ensure([], (require) => {
       cb(null, require('./pages/ManualRSVP').default);
     });
+  },
+  meetTheParty : (location, cb)=>{
+    require.ensure([], (require) => {
+      cb(null, require('./pages/MeetTheParty').default);
+    });
   }
 }
 
@@ -104,6 +109,7 @@ render(
             <Route path='photos' getComponent={components.photos}/>
             <Route path='photos/:id' getComponent={components.photosEnlarge}/>
             <Route path='instagram-feed' getComponent={components.instagramFeed}/>
+            <Route path='party' getComponent={components.meetTheParty}/>
             <Route path='admin' getComponent={components.admin}>
               <IndexRoute getComponent={components.adminOverview}/>
               <Route path='messaging' getComponent={components.adminMessaging}/>

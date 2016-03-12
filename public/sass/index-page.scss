@@ -41,14 +41,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(270deg, #233767, #1f8198, #F2687F);
+    background-size: 3000px 6000px;
 
     .count-down,.caption{
       font-size: 100px;
       font-weight: 100;
       font-family: 'Open Sans';
-      text-shadow: 2px 0px #FFFFFF;
+      text-shadow: 2px 0px #ddd;
       z-index: 10;
-      color: #F2687F;
+      color: white;
     }
 
   }
@@ -154,7 +156,6 @@
     transform-origin: 100% 100%;
   }
   .posts{
-    background: #F2687F;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +166,7 @@
       border: 4px solid #FDFDFD;
       flex-basis: 180px;
       flex-grow: 2;
-      background-color: transparent;
+      background-color: white;
     }
     .profile{
       display: none;
@@ -179,6 +180,8 @@
     width: 100px
   }
   .hashtag{
-    font-size: 100px;
+    color: #657990;
+    font-size: 60px;
+    vertical-align: top;
   }
 }

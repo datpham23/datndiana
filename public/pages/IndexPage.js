@@ -316,7 +316,7 @@ export default React.createClass({
           <p className="caption">Til The Big Day!</p>
         </div>
         <div className='instagram-container'>
-          <img src='/img/instagramicon.png'/>
+          <img className='instagram-icon' src='/img/instagramicon.png'/>
           <span className='hashtag'>#datdianawedding</span>
         </div>
         <div className='posts'>

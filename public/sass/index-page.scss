@@ -35,29 +35,22 @@
   }
 
   .count-down-container{
+    position: relative;
     height: 500px;
-    background-color: #555;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(270deg, #233767, #1f8198, #F2687F);
-    background-size: 800% 800%;
-    -webkit-animation: Background 20s ease infinite;
-    -moz-animation: Background 20s ease infinite;
-    animation: Background 20s ease infinite;
 
-    .count-down{
+    .count-down,.caption{
       font-size: 100px;
-      color: white;
       font-weight: 100;
       font-family: 'Open Sans';
-    }
-    .caption{
-      font-size: 70px;
+      text-shadow: 2px 0px #FFFFFF;
+      z-index: 10;
       color: #F2687F;
-      font-weight: 100;
     }
+
   }
 
   .calendar-container {
@@ -160,20 +153,32 @@
     transform: rotate(45deg);
     transform-origin: 100% 100%;
   }
-}
+  .posts{
+    background: #F2687F;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
 
-@-webkit-keyframes Background {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes Background {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes Background {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+    .instagram-post{
+      border: 4px solid #FDFDFD;
+      flex-basis: 180px;
+      flex-grow: 2;
+      background-color: transparent;
+    }
+    .profile{
+      display: none;
+    }
+    .tags{
+      display: none;
+    }
+  }
+
+  .instagram-icon{
+    width: 100px
+  }
+  .hashtag{
+    font-size: 100px;
+  }
 }

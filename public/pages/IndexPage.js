@@ -1,7 +1,9 @@
 import React, {PropTypes} from 'react'
 import {Carousel, CarouselItem} from 'react-bootstrap';
 import '../sass/index-page.scss';
+import InstagramPost from '../components/InstagramPost';
 import ReactDOMServer from 'react-dom/server';
+import * as API from '../api/api';
 
 const style = [
   {
@@ -77,8 +79,15 @@ const style = [
 
 export default React.createClass({
   getInitialState: function() {
+    API.getInstagramFeed('datdianawedding').then(res=>{
+      this.setState({
+        posts : res.entity
+      })
+    });
+
     return {
-      countDown : ''
+      countDown : '',
+      posts : []
     };
   },
   componentWillUnmount: function() {
@@ -189,9 +198,6 @@ export default React.createClass({
         <Carousel interval={2000}>
           <CarouselItem>
             <img width='100%' height='100%' src="/img/cover1.jpg"/>
-              <div className="carousel-caption">
-
-              </div>
           </CarouselItem>
           <CarouselItem>
             <img width='100%' height='100%' src="/img/cover2.jpg"/>
@@ -308,6 +314,19 @@ export default React.createClass({
         <div className="count-down-container">
           <p className="count-down">{this.state.countDown}</p>
           <p className="caption">Til The Big Day!</p>
+        </div>
+        <div className='instagram-container'>
+          <img src='/img/instagramicon.png'/>
+          <span className='hashtag'>#datdianawedding</span>
+        </div>
+        <div className='posts'>
+          {
+             this.state.posts.map(post=>{
+               return (
+                 <InstagramPost key={post.id} post={post}/>
+               )
+             })
+           }
         </div>
       </div>
     )

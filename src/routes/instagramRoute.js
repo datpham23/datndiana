@@ -16,6 +16,23 @@ router.get('/hashtag', (req, res) => {
     if (err)
       res.status(500).json(err);
 
+    // var page = pagination;
+    // while(page.next){
+    //   pagination.next((err, posts, nextPage, remaining, limit)=>{
+    //     console.log(posts);
+    //     page = nextPage;
+    //   })
+    // }
+
+    // var posts = medias;
+    //
+    //
+    // pagination.next((err,post,remaining,limit)=>{
+    //   posts.concat(post)
+    // })
+    //
+
+
     res.json(medias);
   });
 });

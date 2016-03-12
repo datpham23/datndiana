@@ -3,7 +3,6 @@ import '../sass/components/instagram-post.scss';
 
 export default React.createClass({
   render: function() {
-    console.log(this.props.post)
     let {post} = this.props;
     return (
       <div className='instagram-post'>

@@ -78,7 +78,7 @@ const ManualRSVP = React.createClass({
                 <label>Email</label>
                 <input
                   className='form-control input-sm'
-                  name='name'
+                  name='email'
                   type='email'
                   placeholder='Email'
                   value={manualRSVP.email}
@@ -92,7 +92,7 @@ const ManualRSVP = React.createClass({
                 <label>Phone Number</label>
                 <input
                   className='form-control input-sm'
-                  name='name'
+                  name='phone-number'
                   type='tel'
                   placeholder='Phone Number'
                   value={manualRSVP.phone}
@@ -100,6 +100,16 @@ const ManualRSVP = React.createClass({
                   onChange={(e)=>{
                     this.actions.updatePhoneNumber(e.target.value)
                   }}
+                />
+              </div>
+              <div className='form-group'>
+                <label>Vegetarian</label>
+                <input
+                  name='is-veggie'
+                  className='is-veggie'
+                  type='checkbox'
+                  checked={manualRSVP.vegetarian}
+                  onChange={this.actions.updateVeggie}
                 />
               </div>
               <div className='form-group'>
@@ -163,7 +173,7 @@ const ManualRSVP = React.createClass({
               <div className="button-container">
                 <button
                   className="btn btn-default rsvp-button"
-
+                  disabled={manualRSVP.isSaving || !this.isValidForm()}
                   onClick={this.actions.rsvp.bind(null,this.props.history)}>
                   RSVP
                 </button>

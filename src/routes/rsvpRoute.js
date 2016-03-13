@@ -38,27 +38,28 @@ router.post('/manual', (req, res) => {
   co(function*() {
     console.log('here');
     winston.log(`RSVP : ${req.body}`);
+    var guest = req.body;
 
     var dbRes = yield r.db(db)
       .table(table)
-      .insert(req.body);
+      .insert(guest);
 
     var transporter = nodemailer.createTransport('smtps://datdianawedding%40gmail.com:skeptical@smtp.gmail.com');
-    // var mailOptions = {
-    //   from: 'Dat and Diana 💑 <datdianawedding@gmail.com>',
-    //   to: 'datdianawedding@gmail.com',
-    //   subject: `${guest.name} has rsvp`,
-    //   text: JSON.stringify(guest),
-    //   html: ''
-    // };
-    //
-    // transporter.sendMail(mailOptions, function(error, info){
-    //   console.log(error);
-    //   if(error){
-    //       return winston.log(error);
-    //   }
-    //   winston.info('Message sent: ' + info.response);
-    // });
+    var mailOptions = {
+      from: 'Dat and Diana 💑 <datdianawedding@gmail.com>',
+      to: 'datdianawedding@gmail.com',
+      subject: `${guest.name} has rsvp`,
+      text: JSON.stringify(guest),
+      html: ''
+    };
+
+    transporter.sendMail(mailOptions, function(error, info){
+      console.log(error);
+      if(error){
+          return winston.log(error);
+      }
+      winston.info('Message sent: ' + info.response);
+    });
 
     res.send('RSVP Completed');
   })

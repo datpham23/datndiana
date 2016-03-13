@@ -1,71 +1,63 @@
-.manual-rsvp-page{
+.manual-rsvp-page {
   background-color: #9A7F84;
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(../img/DDE-21.jpg) no-repeat center center fixed;
+  background: url("../img/DDE-21.jpg") no-repeat center center fixed;
   background-size: cover;
-
-  &.password{
+  &.password {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    .hint{
+    .hint {
       color: white;
       font-size: 14px;
       text-shadow: 1px 1px #2B2D2F;
     }
-
-    .input-group{
+    .input-group {
       width: 300px;
     }
   }
-
-  .guest-name{
+  .guest-name {
     margin-bottom: 5px;
   }
-
-  label{
+  .is-veggie {
+    margin-left: 10px;
+  }
+  label {
     font-weight: 200;
   }
-
-  .button-container{
+  .button-container {
     text-align: right;
   }
-
-  .envelope{
+  .envelope {
     margin-left: 20px;
-    margin-top: 60px;
+    margin-top: 95px;
     z-index: 0;
     border-style: solid;
     border-width: 0 250px 100px 250px;
     border-color: transparent transparent #256a98 transparent;
-    box-shadow: 0 100px 0 0 #256a98,
-                0 150px 90px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 100px 0 0 #256a98, 0 150px 90px 0 rgba(0,0,0,0.3);
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 400px;
-
     &:after,
-    &:before{
-    	content:'';
-    	display: block;
-    	position: absolute;
-    	top: 100px;
-    	border-style: solid;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 100px;
+      border-style: solid;
     }
-
-    &:after{
+    &:after {
       width: 0;
       height: 0;
       left: -41px;
       border-width: 94px 292px 130px 0;
       border-color: transparent #2a7fb5 transparent transparent;
     }
-
-    &:before{
+    &:before {
       width: 500px;
       height: 180px;
       left: -251px;
@@ -73,13 +65,11 @@
       border-color: transparent transparent transparent #3596da;
     }
   }
-
-
-  .card{
+  .card {
     width: 440px;
-    min-height: 600px;
+    min-height: 650px;
     position: absolute;
-    top: -380px;
+    top: -415px;
     left: -215px;
     z-index: -1;
     background: #FFFFFF;

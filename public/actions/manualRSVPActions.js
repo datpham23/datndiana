@@ -30,6 +30,12 @@ export const updateGuestName = (index,name)=>{
   }
 }
 
+export const updateVeggie = ()=>{
+  return {
+    type : Constants.UPDATE_VEGGIE
+  }
+}
+
 
 export const rsvp = (history)=>{
   return (dispatch,state)=>{
@@ -45,7 +51,8 @@ export const rsvp = (history)=>{
       phone : manualRSVP.phone,
       guests : manualRSVP.guests.filter(guest=>{
         return guest != null
-      })
+      }),
+      vegetarian : manualRSVP.vegetarian
     }
 
     API.manualRSVP(guest).then(res=>{

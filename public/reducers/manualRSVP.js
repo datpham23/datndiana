@@ -6,7 +6,8 @@ const initialState = {
   email : '',
   phone : '',
   guests : new Array(5),
-  isSaving : false
+  isSaving : false,
+  vegetarian : false,
 };
 
 export default (state = Immutable.fromJS(initialState), action)=>{
@@ -19,6 +20,8 @@ export default (state = Immutable.fromJS(initialState), action)=>{
       return state.set('phone',action.phoneNumber);
     case Constants.UPDATE_GUEST_NAME:
       return updatGuestName(state,action);
+    case Constants.UPDATE_VEGGIE:
+      return state.set('vegetarian',!state.get('vegetarian'));
     case Constants.SAVING_RSVP:
       return state.set('isSaving',true);
     case Constants.SAVED_RSVP:

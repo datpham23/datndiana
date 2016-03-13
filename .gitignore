@@ -6,4 +6,3 @@ public/build
 .idea/
 rethinkdb_data/
 app.log
-config.js

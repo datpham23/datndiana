@@ -8,6 +8,20 @@ import * as RSVPActions from '../actions/manualRSVPActions';
 
 
 const ManualRSVP = React.createClass({
+  getInitialState: function() {
+    return {
+      authenticated : false
+    };
+  },
+  checkPassword(){
+    let password = this.refs.password.value;
+    if(password === 'firefly'){
+      this.setState({
+        authenticated : true
+      });
+      $(document).keyup(()=>{});
+    }
+  },
   componentWillMount() {
     this.actions = bindActionCreators(RSVPActions,this.props.dispatch);
   },
@@ -15,7 +29,30 @@ const ManualRSVP = React.createClass({
     let {manualRSVP} = this.props;
     return (manualRSVP.name.length > 0 && manualRSVP.email.length >0)
   },
+  componentDidMount: function() {
+    $('.password-input').focus();
+    $(document).keyup(e=>{
+      if (13 == e.keyCode) {
+        this.checkPassword();
+      }
+    });
+  },
+  componentWillUnmount(){
+    $(document).keyup(()=>{});
+  },
   render() {
+    if(!this.state.authenticated)
+      return (
+        <div className='manual-rsvp-page password'>
+          <div className="input-group">
+            <input ref='password' type="text" className="form-control password-input" placeholder="Password"/>
+            <span className="input-group-btn">
+              <button className="btn btn-default" type="button" onClick={this.checkPassword}>Enter</button>
+            </span>
+          </div>
+          <div className='hint'>hint: check your invitation</div>
+        </div>
+      )
     let {manualRSVP} = this.props;
 
     return (
@@ -126,7 +163,7 @@ const ManualRSVP = React.createClass({
               <div className="button-container">
                 <button
                   className="btn btn-default rsvp-button"
-                  disabled={manualRSVP.isSaving || !this.isValidForm()}
+
                   onClick={this.actions.rsvp.bind(null,this.props.history)}>
                   RSVP
                 </button>

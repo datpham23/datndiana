@@ -1,6 +1,6 @@
 .meet-the-party{
   margin-top: 100px;
-  background: #A68B8B;
+  background: #372F2F;
   padding-bottom: 100px;
 
   .background{
@@ -9,7 +9,7 @@
     height: 0;
     height: 100%;
     width: 100%;
-    background: #A68B8B;
+    background: #372F2F;
     z-index: -1;
   }
 
@@ -21,6 +21,7 @@
   .header{
     text-align: center;
     font-weight: 100;
+    color: white;
   }
 
   .person{
@@ -39,7 +40,7 @@
       font-weight: 200;
     }
     .title{
-      color: #504F4F;
+      color: #949494;
       font-weight: 200;
     }
   }

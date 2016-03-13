@@ -33,7 +33,7 @@ export default React.createClass({
 
         <div className='group'>
           <div className='person'>
-            <img src='/img/daucao.jpg' className='picture'/>
+            <img src='/img/datcao.jpg' className='picture'/>
             <div className='name'>Dat Cao</div>
             <div className='title'>Groom</div>
           </div>
@@ -74,7 +74,7 @@ export default React.createClass({
             <div className='title'>Bridesmaid</div>
           </div>
           <div className='person'>
-            <img src='/img/nancyhuynh.jpg' className='picture'/>
+            <img src='/img/natashaly.jpg' className='picture'/>
             <div className='name'>Natasha Ly</div>
             <div className='title'>Bridesmaid</div>
           </div>
@@ -82,7 +82,7 @@ export default React.createClass({
 
         <div className='group'>
           <div className='person'>
-            <img src='/img/lawrencego.jpg' className='picture'/>
+            <img src='/img/vinhdiep.jpg' className='picture'/>
             <div className='name'>Vinh Diep</div>
             <div className='title'>Groomsman</div>
           </div>

@@ -1,0 +1,12 @@
+.live-streaming-page{
+  width: 100%;
+  height: 100vh;
+  background: url(../img/DDE-19.jpg) no-repeat center center fixed;
+  background-size: cover;
+
+  .video{
+    margin-top: 100px;
+    margin-left: 100px;
+    border: 4px solid white;
+  }
+}

@@ -55,6 +55,9 @@ const App = React.createClass({
                   </ul>
                 </li>
                 <li>
+                  <a  href="#/live-streaming">Live Streaming</a>
+                </li>
+                <li>
                   <a  href="#party">Meet The Party</a>
                 </li>
                 <li>

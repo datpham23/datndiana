@@ -96,6 +96,11 @@ const components = {
     require.ensure([], (require) => {
       cb(null, require('./pages/MeetTheParty').default);
     });
+  },
+  liveStreaming : (location, cb)=>{
+    require.ensure([], (require) => {
+      cb(null, require('./pages/LiveStreaming').default);
+    });
   }
 }
 
@@ -108,6 +113,7 @@ render(
             <IndexRoute getComponent={components.index}/>
             <Route path='photos' getComponent={components.photos}/>
             <Route path='photos/:id' getComponent={components.photosEnlarge}/>
+            <Route path='live-streaming' getComponent={components.liveStreaming}/>
             <Route path='instagram-feed' getComponent={components.instagramFeed}/>
             <Route path='party' getComponent={components.meetTheParty}/>
             <Route path='admin' getComponent={components.admin}>

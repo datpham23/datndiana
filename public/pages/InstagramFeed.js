@@ -40,7 +40,7 @@ export default React.createClass({
         posts : posts
       });
 
-      if(this.state.posts.length<100){
+      if(this.state.posts.length<100 && entity.pagination.next_max_id){
         this.getNextPage(entity.pagination.next_max_id)
       }
     });

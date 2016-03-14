@@ -81,7 +81,7 @@ export default React.createClass({
   getInitialState: function() {
     API.getInstagramFeed('datdianawedding').then(res=>{
       this.setState({
-        posts : res.entity
+        posts : res.entity.posts
       })
     });
 

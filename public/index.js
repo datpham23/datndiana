@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
 import {createStore,
@@ -11,10 +10,7 @@ import {Router,
         Route,
         IndexRoute}             from 'react-router';
 import createHistory            from 'history/lib/createHashHistory';
-import {syncReduxAndRouter,
-        routeReducer}           from 'redux-simple-router';
 import DevTools                 from './components/DevTools';
-import co                       from 'co';
 import guests                   from './reducers/guests';
 import rsvp                     from './reducers/rsvp';
 import manualRSVP               from './reducers/manualRSVP';
@@ -22,7 +18,6 @@ import manualRSVP               from './reducers/manualRSVP';
 
 
 const reducers = combineReducers({
-  routing: routeReducer,
   rsvp : rsvp,
   guests : guests,
   manualRSVP : manualRSVP
@@ -41,7 +36,6 @@ let store = createStoreWithMiddleware(reducers);
 const history = createHistory({
   queryKey: false
 });
-syncReduxAndRouter(history, store);
 
 
 import App       from './App';

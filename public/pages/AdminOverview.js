@@ -22,6 +22,7 @@ const AdminOverview = React.createClass({
         'Email' : guest.email,
         'Phone' : guest.phone,
         'Number of Guests Allowed' : guest.numberOfGuests,
+        'Vegetarian' : guest.vegetarian? 'YES' : 'NO',
         'Status' : guest,
         'Guests' : guest.guests,
         'id' : guest.id,
@@ -124,7 +125,7 @@ const AdminOverview = React.createClass({
                   resultsPerPage={1000}
                   tableClassName='table table-striped table-hover'
                   results={rows}
-                  columns={['Name', 'Email', 'Phone', 'Number of Guests Allowed','Status', 'Guests']}
+                  columns={['Name', 'Email', 'Phone', 'Number of Guests Allowed','Vegetarian','Status', 'Guests']}
                   useGriddleStyles={false}
                   columnMetadata={columnMeta}
                 />

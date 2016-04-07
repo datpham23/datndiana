@@ -22,7 +22,7 @@ getIP(function (err, ip) {
 
   winston.log(`calling back on http://${ip}:${process.env.PORT}`);
 
-  ig.add_tag_subscription('trump', `http://${ip}:${process.env.PORT}/callback`, {}, (err, result, remaining, limit)=>{
+  ig.add_tag_subscription('datdianawedding', `http://${ip}:${process.env.PORT}/callback`, {}, (err, result, remaining, limit)=>{
   });
 });
 

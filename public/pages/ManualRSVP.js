@@ -15,7 +15,7 @@ const ManualRSVP = React.createClass({
   },
   checkPassword(){
     let password = this.refs.password.value;
-    if(password === 'firefly'){
+    if(password === 'candlelight'){
       this.setState({
         authenticated : true
       });
